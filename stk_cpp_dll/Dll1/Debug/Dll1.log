@@ -1,0 +1,19 @@
+﻿  pch.cpp
+  MyHeader.cpp
+  Scalable_SineWave.cpp
+  ADSR.cpp
+  BeeThree.cpp
+  Envelope.cpp
+  FileLoop.cpp
+  FileRead.cpp
+  FileWvIn.cpp
+  FM.cpp
+  Mutex.cpp
+  RtAudio.cpp
+  RtWvOut.cpp
+  SineWave.cpp
+  Stk.cpp
+  TwoZero.cpp
+  Generating Code...
+     Creating library C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Debug\Dll1.lib and object C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Debug\Dll1.exp
+  Dll1.vcxproj -> C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Debug\Dll1.dll

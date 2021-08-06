@@ -1,0 +1,32 @@
+﻿  pch.cpp
+  MyHeader.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\Scalable_SineWave.h(2,10): fatal error C1083: Cannot open include file: 'SineWave.h': No such file or directory
+  Scalable_SineWave.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\Scalable_SineWave.h(2,10): fatal error C1083: Cannot open include file: 'SineWave.h': No such file or directory
+  ADSR.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\ADSR.cpp(16,10): fatal error C1083: Cannot open include file: 'ADSR.h': No such file or directory
+  BeeThree.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\BeeThree.cpp(35,10): fatal error C1083: Cannot open include file: 'BeeThree.h': No such file or directory
+  Envelope.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\Envelope.cpp(15,10): fatal error C1083: Cannot open include file: 'Envelope.h': No such file or directory
+  FileLoop.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\FileLoop.cpp(19,10): fatal error C1083: Cannot open include file: 'FileLoop.h': No such file or directory
+  FileRead.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\FileRead.cpp(34,10): fatal error C1083: Cannot open include file: 'FileRead.h': No such file or directory
+  FileWvIn.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\FileWvIn.cpp(34,10): fatal error C1083: Cannot open include file: 'FileWvIn.h': No such file or directory
+  FM.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\FM.cpp(26,10): fatal error C1083: Cannot open include file: 'FM.h': No such file or directory
+  Mutex.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\Mutex.cpp(14,10): fatal error C1083: Cannot open include file: 'Mutex.h': No such file or directory
+  RtAudio.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\RtAudio.cpp(44,10): fatal error C1083: Cannot open include file: 'RtAudio.h': No such file or directory
+  RtWvOut.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\RtWvOut.cpp(21,10): fatal error C1083: Cannot open include file: 'RtWvOut.h': No such file or directory
+  SineWave.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\SineWave.cpp(16,10): fatal error C1083: Cannot open include file: 'SineWave.h': No such file or directory
+  Stk.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\Stk.cpp(53,10): fatal error C1083: Cannot open include file: 'Stk.h': No such file or directory
+  TwoZero.cpp
+C:\Users\Edwin\Documents\GitHub\20210805\stk_cpp_dll\Dll1\src\TwoZero.cpp(13,10): fatal error C1083: Cannot open include file: 'TwoZero.h': No such file or directory
+  Generating Code...

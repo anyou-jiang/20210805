@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using NAudio.Wave;
 using  System.Numerics;
 using NAudio.Wave.Asio;
+using System.Runtime.InteropServices;
 
 namespace DSPLibrary
 {
    public class ThroatSinging : WaveStream
     {
+        [DllImport("Dll1.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern double get_throat_singing_tick();
 
         public ThroatSinging()
         {
@@ -76,10 +79,14 @@ namespace DSPLibrary
             double[] temp4 = new double[sampleCount / 4];
             // your code goes here
 
+            for (int t_i = 0; t_i < sampleCount / 4; t_i++)
+            {
+                temp4[t_i] = get_throat_singing_tick();
+                System.Console.WriteLine(temp4[t_i]);
+            }
 
 
-
-            for (int n1 = 1; n1 < sampleCount / 4; n1++)
+            for (int n1 = 0; n1 < sampleCount / 4; n1++)
             {
                 byte[] bytes = BitConverter.GetBytes((float)(temp4[n1]));
                 buffer[n1 * 4 + 0] = bytes[0];

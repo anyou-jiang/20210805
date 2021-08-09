@@ -106,7 +106,7 @@
             this.FrequencyForLeftSpeakerTxt.Name = "FrequencyForLeftSpeakerTxt";
             this.FrequencyForLeftSpeakerTxt.Size = new System.Drawing.Size(100, 21);
             this.FrequencyForLeftSpeakerTxt.TabIndex = 30;
-            this.FrequencyForLeftSpeakerTxt.Text = "300";
+            this.FrequencyForLeftSpeakerTxt.Text = "500";
             this.FrequencyForLeftSpeakerTxt.TextChanged += new System.EventHandler(this.FrequencyForLeftSpeakerTxt_TextChanged);
             // 
             // AmplitudeTxt

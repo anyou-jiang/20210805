@@ -17,8 +17,11 @@ namespace Synthesizer
     {
 
         [DllImport("Dll1.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int throatSinging_init(double amplitude, double frequency);
+
+
         //public static extern int my_sythesize([MarshalAs(UnmanagedType.LPStr)] string path);
-        public static extern int throatSinging_play(double amplitude, double frequency, long n_samples);
+        //public static extern int throatSinging_play(double amplitude, double frequency, long n_samples);
 
         public Form1()
         {
@@ -180,14 +183,12 @@ namespace Synthesizer
             _throatSinging.Amplitude = Convert.ToDouble(AmplitudeTxt.Text);
             _throatSinging.Frequency = Convert.ToDouble(FrequencyForLeftSpeakerTxt.Text);
             //  _throatSinging.SimulationRadius = Convert.ToDouble(LowPassTxt.Text);
-            //WaveChannel32 temp = new WaveChannel32(_throatSinging);
-            //temp.PadWithZeroes = false;
-            //_waveOut = new WaveOut();
-            //_waveOut.Init(temp);
-            //_waveOut.Play();
-            const int sampling_rate = 44100;
-            double duration = 2.0;  //sec
-            int status = throatSinging_play(_throatSinging.Amplitude, _throatSinging.Frequency, (long)(Math.Floor(sampling_rate * duration)));
+            WaveChannel32 temp = new WaveChannel32(_throatSinging);
+            throatSinging_init(_throatSinging.Amplitude, _throatSinging.Frequency);
+            temp.PadWithZeroes = false;
+            _waveOut = new WaveOut();
+            _waveOut.Init(temp);
+            _waveOut.Play();
         }
 
       

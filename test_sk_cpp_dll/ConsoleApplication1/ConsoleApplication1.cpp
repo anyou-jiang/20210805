@@ -11,12 +11,19 @@ int main()
 	//string input_file = solutioinDir.append("input.txt");
 	//const char* file_chars = input_file.c_str();
 	//my_sythesize(file_chars);
+	//double amplitude = 0.5;
+	//double frequency = 300;
+	//long n_samples = 44100 * 2;
+	//int status = throatSinging_play(amplitude, frequency, n_samples);
+
 	double amplitude = 0.5;
 	double frequency = 300;
 	long n_samples = 44100 * 2;
-	int status = throatSinging_play(amplitude, frequency, n_samples);
-
-
+	int status = throatSinging_init(amplitude, frequency);
+	for (unsigned sample_i = 0; sample_i < n_samples; sample_i++)
+	{
+		std::cout << get_throat_singing_tick() << std::endl;
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

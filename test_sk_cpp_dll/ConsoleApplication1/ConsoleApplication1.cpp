@@ -6,11 +6,17 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
-    string solutioinDir = string(MY_SOLUTIONDIR);
-    string input_file = solutioinDir.append("input.txt");
-    const char* file_chars = input_file.c_str();
-    my_sythesize(file_chars);
+	std::cout << "Hello World!\n";
+	//string solutioinDir = string(MY_SOLUTIONDIR);
+	//string input_file = solutioinDir.append("input.txt");
+	//const char* file_chars = input_file.c_str();
+	//my_sythesize(file_chars);
+	double amplitude = 0.5;
+	double frequency = 300;
+	long n_samples = 44100 * 2;
+	int status = throatSinging_play(amplitude, frequency, n_samples);
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

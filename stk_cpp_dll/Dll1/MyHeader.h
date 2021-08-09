@@ -8,5 +8,6 @@ using std::string;
 #endif
 
 extern "C" DLL1_API int my_sythesize(const char* path);
+extern "C" DLL1_API int throatSinging_play(double amplitude, double frequency, long n_samples);
 
 

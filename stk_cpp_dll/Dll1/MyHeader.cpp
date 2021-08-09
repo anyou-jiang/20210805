@@ -16,11 +16,12 @@ using namespace stk;
 struct TickData {
     std::vector<std::shared_ptr<Scalable_SineWave>> sinewaves;
     long counter;
+    long total_samples;
     bool done;
 
     // Default constructor.
     TickData(std::vector<std::shared_ptr<Scalable_SineWave>> waves)
-        :sinewaves(waves), counter(0), done(false) {}
+        :sinewaves(waves), counter(0), total_samples(0), done(false) {}
 };
 
 // This tick() function handles sample computation only.  It will be
@@ -47,13 +48,81 @@ int tick(void* outputBuffer, void* inputBuffer, unsigned int nBufferFrames,
         tickData->counter++;
     }
 
-    if (tickData->counter >= 80000) {
+    if (tickData->counter >= tickData->total_samples) {
         tickData->done = true;
     }
 
     return 0;
 }
 
+int throatSinging_play(double amplitude, double frequency, long n_samples)
+{
+    unsigned n_sine = 1;
+    std::vector<std::shared_ptr<Scalable_SineWave>> sines;
+    for (unsigned sine_i = 0; sine_i < n_sine; sine_i++)
+    {
+        std::shared_ptr<Scalable_SineWave> sine = std::shared_ptr<Scalable_SineWave>(new Scalable_SineWave());
+        sine->setFrequency(frequency);
+        sine->setScale(StkFloat(amplitude));
+        sines.push_back(sine);
+    }
+
+    // Set the global sample rate
+    Stk::setSampleRate(44100.0);
+
+    RtAudio dac;
+    // Figure out how many bytes in an StkFloat and setup the RtAudio stream.
+    RtAudio::StreamParameters parameters;
+    parameters.deviceId = dac.getDefaultOutputDevice();
+    parameters.nChannels = 1;
+    RtAudioFormat format = (sizeof(StkFloat) == 8) ? RTAUDIO_FLOAT64 : RTAUDIO_FLOAT32;
+    unsigned int bufferFrames = RT_BUFFER_SIZE;
+    TickData tickData(sines);
+    tickData.total_samples = n_samples;
+
+
+    int status = 0;
+    try {
+        //dac.openStream(&parameters, NULL, format, (unsigned int)Stk::sampleRate(), &bufferFrames, &tick, (void*)&sine);
+        dac.openStream(&parameters, NULL, format, (unsigned int)Stk::sampleRate(), &bufferFrames, &tick, (void*)&tickData);
+    }
+    catch (RtAudioError& error) {
+        error.printMessage();
+        status = -1;
+    }
+
+    try {
+        dac.startStream();
+    }
+    catch (RtAudioError& error) {
+        error.printMessage();
+        status = -2;
+    }
+
+    if (status == 0)
+    {
+        while (!tickData.done)
+        {
+            Stk::sleep(100);
+        }
+
+        // Shut down the output stream.
+        try {
+            dac.closeStream();
+        }
+        catch (RtAudioError& error) {
+            error.printMessage();
+            status = -3;
+            std::cout << "something wrong when closing stream, return with status = " << status << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "something wrong when open and start the stream, return with status = " << status << std::endl;
+    }
+
+    return status;
+}
 
 
 int my_sythesize(const char* path)

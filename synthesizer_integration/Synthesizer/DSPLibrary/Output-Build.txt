@@ -1,0 +1,5 @@
+﻿1>------ Rebuild All started: Project: DSPLibrary, Configuration: Release Any CPU ------
+1>C:\Users\bboone\source\repos\DSPLibrary\DSPLibrary\Guitar.cs(31,14,31,25): warning CS0169: The field 'Guitar.onetimeflag' is never used
+1>C:\Users\bboone\source\repos\DSPLibrary\DSPLibrary\Guitar.cs(56,18,56,22): warning CS0169: The field 'Guitar.flag' is never used
+1>  DSPLibrary -> C:\Users\bboone\source\repos\DSPLibrary\DSPLibrary\bin\Release\DSPLibrary.dll
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========

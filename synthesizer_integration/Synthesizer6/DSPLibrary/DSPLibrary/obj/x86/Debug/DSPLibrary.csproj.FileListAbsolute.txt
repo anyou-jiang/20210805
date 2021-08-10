@@ -1,0 +1,77 @@
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Asio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Core.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Midi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Wasapi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinForms.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinMM.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CopyComplete
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\original\Synthesizer with DSP Class-20210809T121704Z-001\Synthesizer with DSP Class\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Asio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Core.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Midi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Wasapi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinForms.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinMM.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csprojAssemblyReference.cache
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CopyComplete
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Asio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Core.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Midi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Wasapi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinForms.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinMM.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CopyComplete
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer2\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\DSPLibrary.pdb
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Asio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Core.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Midi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.Wasapi.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinForms.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.WinMM.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\Microsoft.Win32.Registry.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\NAudio.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.AccessControl.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\bin\x86\Debug\System.Security.Principal.Windows.xml
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.csproj.CopyComplete
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.dll
+C:\Users\Edwin\Documents\GitHub\20210805\synthesizer_integration\Synthesizer4\DSPLibrary\DSPLibrary\obj\x86\Debug\DSPLibrary.pdb

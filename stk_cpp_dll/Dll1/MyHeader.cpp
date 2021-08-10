@@ -72,6 +72,15 @@ int throatSinging_init(double amplitude, double frequency)
     return status;
 }
 
+
+double* get_throat_singing_frame(double* samples, int n_samples) {
+    for (int sample_i = 0; sample_i < n_samples; sample_i++)
+    {
+        samples[sample_i] = get_throat_singing_tick();
+    }
+    return samples;
+}
+
 double get_throat_singing_tick() {
     const double amp_margin = 0.1;
     double sample = 0.0;

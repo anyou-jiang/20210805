@@ -14,8 +14,12 @@ namespace DSPLibrary
     {
         [DllImport("Dll1.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern double get_throat_singing_tick();
-        //public static extern double* get_throat_singing_frame(double* samples, int n_samples);
 
+        [DllImport("Dll1.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int throatSinging_init_2();
+
+        [DllImport("Dll1.dll", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int throatSinging_push_sine(double amplitude, double frequency);
 
         public ThroatSinging()
         {
@@ -28,8 +32,32 @@ namespace DSPLibrary
             onetimeflag = false;
             Bufferlength = 44100;
 
-        }
 
+            //Initialize the dll
+            throatSinging_init_2();
+
+            //double[] frequencies = { 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88 };
+            //double[] amplitudes = { 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4 };
+            double[] frequencies = { 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88 };
+            double[] amplitudes = { 1, 0.1, 0.1, 0.1, 0.1, 0.1, 1 };
+            double[] amplitudes_norm = { 0, 0, 0, 0, 0, 0, 0 };
+            double sum = 0.0;
+            double margin = 0.1;
+            for (int tone_i = 0; tone_i < 7; tone_i++)
+            {
+                sum = sum + amplitudes[tone_i];
+            }
+            for (int tone_i = 0; tone_i < 7; tone_i++)
+            {
+                amplitudes_norm[tone_i] = (1 - margin) * amplitudes[tone_i] / sum;
+                System.Console.WriteLine(amplitudes_norm[tone_i]);
+            }
+
+            for (int tone_i = 0; tone_i < 7; tone_i++)
+            {
+                throatSinging_push_sine(amplitudes_norm[tone_i], frequencies[tone_i]);
+            }
+        }
 
 
         bool onetimeflag;

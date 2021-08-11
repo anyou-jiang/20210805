@@ -55,8 +55,160 @@ int tick(void* outputBuffer, void* inputBuffer, unsigned int nBufferFrames,
     return 0;
 }
 
+std::vector<std::shared_ptr<Scalable_SineWave>> sines_throat_singing_left;
+std::vector<std::shared_ptr<Scalable_SineWave>> sines_throat_singing_right;
+
+int throatSinging_init_left()
+{
+    // Set the global sample rate
+    Stk::setSampleRate(44100.0);
+
+    int status = 0;
+    sines_throat_singing_left = std::vector<std::shared_ptr<Scalable_SineWave>>();
+
+    return status;
+}
+
+int throatSinging_init_right()
+{
+    // Set the global sample rate
+    Stk::setSampleRate(44100.0);
+
+    int status = 0;
+    sines_throat_singing_right = std::vector<std::shared_ptr<Scalable_SineWave>>();
+
+    return status;
+}
+
+double get_throat_singing_tick_left() 
+{
+    const double amp_margin = 0.1;
+    double sample = 0.0;
+    for (unsigned sine_i = 0; sine_i < sines_throat_singing_left.size(); sine_i++)
+    {
+        sample = sample + (1.0 - amp_margin) * sines_throat_singing_left[sine_i]->tick();
+    }
+    return sample;
+}
+
+double get_throat_singing_tick_right() {
+    const double amp_margin = 0.1;
+    double sample = 0.0;
+    for (unsigned sine_i = 0; sine_i < sines_throat_singing_right.size(); sine_i++)
+    {
+        sample = sample + (1.0 - amp_margin) * sines_throat_singing_right[sine_i]->tick();
+    }
+    return sample;
+}
+
+int throatSinging_push_sine_left(double amplitude, double frequency)
+{
+    int status = 0;
+    std::shared_ptr<Scalable_SineWave> sine = std::shared_ptr<Scalable_SineWave>(new Scalable_SineWave());
+    sine->setFrequency(frequency);
+    sine->setScale(StkFloat(amplitude));
+    sines_throat_singing_left.push_back(sine);
+    std::cout << "left " << sines_throat_singing_left.size() << ", " << frequency << ", " << amplitude << std::endl;
+    return status;
+}
+
+int throatSinging_push_sine_right(double amplitude, double frequency)
+{
+    int status = 0;
+    std::shared_ptr<Scalable_SineWave> sine = std::shared_ptr<Scalable_SineWave>(new Scalable_SineWave());
+    sine->setFrequency(frequency);
+    sine->setScale(StkFloat(amplitude));
+    sines_throat_singing_right.push_back(sine);
+    std::cout << "right " << sines_throat_singing_right.size() << ", " << frequency << ", " << amplitude << std::endl;
+    return status;
+}
+
+
 unsigned n_sine_throat_singing = 0;
 std::vector<std::shared_ptr<Scalable_SineWave>> sines_throat_singing;
+
+
+int throatSinging_play_2()
+{
+    double frequences[] = { 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88 };
+    double amplitudes[] = { 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4 };
+    long n_samples = 44100 * 2;
+    int status = throatSinging_init_2();
+
+    double amplitudes_norm[7];
+    double sum = 0.0;
+    for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+    {
+        sum = sum + amplitudes[tone_i];
+    }
+    for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+    {
+        amplitudes_norm[tone_i] = amplitudes[tone_i] / sum;
+        std::cout << amplitudes_norm[tone_i] << std::endl;
+    }
+
+    for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+    {
+        throatSinging_push_sine(amplitudes_norm[tone_i], frequences[tone_i]);
+    }
+
+    // Set the global sample rate
+    Stk::setSampleRate(44100.0);
+
+    RtAudio dac;
+    // Figure out how many bytes in an StkFloat and setup the RtAudio stream.
+    RtAudio::StreamParameters parameters;
+    parameters.deviceId = dac.getDefaultOutputDevice();
+    parameters.nChannels = 1;
+    RtAudioFormat format = (sizeof(StkFloat) == 8) ? RTAUDIO_FLOAT64 : RTAUDIO_FLOAT32;
+    unsigned int bufferFrames = RT_BUFFER_SIZE;
+    TickData tickData(sines_throat_singing);
+    tickData.total_samples = n_samples;
+
+
+    status = 0;
+    try {
+        //dac.openStream(&parameters, NULL, format, (unsigned int)Stk::sampleRate(), &bufferFrames, &tick, (void*)&sine);
+        dac.openStream(&parameters, NULL, format, (unsigned int)Stk::sampleRate(), &bufferFrames, &tick, (void*)&tickData);
+    }
+    catch (RtAudioError& error) {
+        error.printMessage();
+        status = -1;
+    }
+
+    try {
+        dac.startStream();
+    }
+    catch (RtAudioError& error) {
+        error.printMessage();
+        status = -2;
+    }
+
+    if (status == 0)
+    {
+        while (!tickData.done)
+        {
+            Stk::sleep(100);
+        }
+
+        // Shut down the output stream.
+        try {
+            dac.closeStream();
+        }
+        catch (RtAudioError& error) {
+            error.printMessage();
+            status = -3;
+            std::cout << "something wrong when closing stream, return with status = " << status << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "something wrong when open and start the stream, return with status = " << status << std::endl;
+    }
+
+    return status;
+}
+
 
 int throatSinging_push_sine(double amplitude, double frequency)
 {
@@ -72,6 +224,9 @@ int throatSinging_push_sine(double amplitude, double frequency)
 
 int throatSinging_init_2()
 {
+    // Set the global sample rate
+    Stk::setSampleRate(44100.0);
+
     int status = 0;
     n_sine_throat_singing = 0;
     sines_throat_singing = std::vector<std::shared_ptr<Scalable_SineWave>>();

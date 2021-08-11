@@ -25,32 +25,34 @@ int main()
 	//	std::cout << get_throat_singing_tick() << std::endl;
 	//}
 
-	double frequences[] = { 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88 };
-	double amplitudes[] = { 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4 };
-	long n_samples = 44100 * 2;
-	int status = throatSinging_init_2();
+	//double frequences[] = { 261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88 };
+	//double amplitudes[] = { 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4 };
+	//long n_samples = 44100 * 2;
+	//int status = throatSinging_init_2();
 
-	double amplitudes_norm[7];
-	double sum = 0.0;
-	for (unsigned tone_i = 0; tone_i < 7; tone_i++)
-	{
-		sum = sum + amplitudes[tone_i];
-	}
-	for (unsigned tone_i = 0; tone_i < 7; tone_i++)
-	{
-		amplitudes_norm[tone_i] = amplitudes[tone_i] / sum;
-		std::cout << amplitudes_norm[tone_i] << std::endl;
-	}
+	//double amplitudes_norm[7];
+	//double sum = 0.0;
+	//for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+	//{
+	//	sum = sum + amplitudes[tone_i];
+	//}
+	//for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+	//{
+	//	amplitudes_norm[tone_i] = amplitudes[tone_i] / sum;
+	//	std::cout << amplitudes_norm[tone_i] << std::endl;
+	//}
 
-	for (unsigned tone_i = 0; tone_i < 7; tone_i++)
-	{
-		throatSinging_push_sine(amplitudes_norm[tone_i], frequences[tone_i]);
-	}
+	//for (unsigned tone_i = 0; tone_i < 7; tone_i++)
+	//{
+	//	throatSinging_push_sine(amplitudes_norm[tone_i], frequences[tone_i]);
+	//}
 
-	for (unsigned sample_i = 0; sample_i < n_samples; sample_i++)
-	{
-		std::cout << get_throat_singing_tick() << std::endl;
-	}
+	//for (unsigned sample_i = 0; sample_i < n_samples; sample_i++)
+	//{
+	//	std::cout << get_throat_singing_tick() << std::endl;
+	//}
+
+	throatSinging_play_2();
 
 }
 

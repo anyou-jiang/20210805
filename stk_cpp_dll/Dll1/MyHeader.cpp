@@ -55,12 +55,34 @@ int tick(void* outputBuffer, void* inputBuffer, unsigned int nBufferFrames,
     return 0;
 }
 
-unsigned n_sine_throat_singing = 1;
+unsigned n_sine_throat_singing = 0;
 std::vector<std::shared_ptr<Scalable_SineWave>> sines_throat_singing;
+
+int throatSinging_push_sine(double amplitude, double frequency)
+{
+    int status = 0;
+    std::shared_ptr<Scalable_SineWave> sine = std::shared_ptr<Scalable_SineWave>(new Scalable_SineWave());
+    sine->setFrequency(frequency);
+    sine->setScale(StkFloat(amplitude));
+    sines_throat_singing.push_back(sine);
+    std::cout << sines_throat_singing.size() << ", " << frequency << ", " << amplitude << std::endl;
+    n_sine_throat_singing++;
+    return status;
+}
+
+int throatSinging_init_2()
+{
+    int status = 0;
+    n_sine_throat_singing = 0;
+    sines_throat_singing = std::vector<std::shared_ptr<Scalable_SineWave>>();
+
+    return status;
+}
 
 int throatSinging_init(double amplitude, double frequency)
 {
     int status = 0;
+    n_sine_throat_singing = 1;
     sines_throat_singing = std::vector<std::shared_ptr<Scalable_SineWave>>();
     for (unsigned sine_i = 0; sine_i < n_sine_throat_singing; sine_i++)
     {
